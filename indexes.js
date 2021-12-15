@@ -20,6 +20,7 @@ const playerMusik = document.querySelector(".player-musik"),
 
 
 const playerMusikBar = document.querySelector(".player-musik-bar"),
+      btnSongBar = document.querySelector(".info-song-bar"),
       infoSongBar = document.querySelector(".info-song-bar h4");
 
 
@@ -50,6 +51,8 @@ function autoPlay(arg) {
     clearInterval(interval);
     clearTimeout(timeOut);
     playerMusik.style.right = "0";
+    btnPlay[0].innerHTML = "||";
+    btnPlay[1].innerHTML = "||";
     resetInfoSong(infoSong[arg-1][1], infoSong[arg-1].join(" - "), srcAlbum[arg-1]);
     musik.src = "bahan/musik/"+ infoSong[arg-1][1].toLowerCase() +".mp3";
     musik.play();
@@ -92,7 +95,8 @@ function nextPlay() {
     if(currentMusik > lagu.length) {
         currentMusik = 1;
     }
-    btnPlay.innerHTML = "||";
+    btnPlay[0].innerHTML = "||";
+    btnPlay[1].innerHTML = "||";
     autoPlay(currentMusik);
 }
 
@@ -101,7 +105,8 @@ function prevPlay() {
     if(currentMusik < 1) {
         currentMusik = lagu.length;
     }
-    btnPlay.innerHTML = "||";
+    btnPlay[0].innerHTML = "||";
+    btnPlay[1].innerHTML = "||";
     autoPlay(currentMusik);
 }
 
@@ -139,4 +144,8 @@ btnPrev[1].onclick = prevPlay;
 closes.onclick = function() {
     playerMusik.style.right = "100%";
     playerMusikBar.style.transform ="translateX(0)";
+}
+
+btnSongBar.onclick = function() {
+    playerMusik.style.right = "0";
 }

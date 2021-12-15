@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Microsoft PhagsPa', sans-serif;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* Header */
+
+.header {
+    width: 100vw;
+    background-color: #ff6009;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.header .title-app {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    font-size: 1.8em;
+}
+
+.header .title-app span {
+    font-family: 'Leelawadee UI';
+    color: #000;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 1.3em;
+}
+
+
+/* Main */
+
+.main-app {
+    background-color: #111111;
+    color: #fff;
+}
+
+.menu h4 {
+    text-align: center;
+    padding: 40px 0 10px;
+    border-bottom: 2px solid #ff6009;
+    font-weight: 400;
+}
+
+.row-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 0;
+    overflow-y: scroll;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #fff;
+    cursor: pointer;
+}
+
+.card .img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: #fff;
+    margin-right: 20px;
+}
+
+.card .img img {
+    width: 100%;
+}
+
+.title-song {
+    font-size: 1.2em;
+}
+
+.artis-song {
+    margin: 0;
+    color: #7b7b7b;
+    font-size: .9em;
+}
+
+
+
+/* Musik player */
+
+.player-musik {
+    position: absolute;
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    top: 100%;
+    background-color: #111111;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: .6s;
+}
+
+.close {
+    display: inline-block;
+    color: #ff6009;
+    transform: rotate(90deg);
+    font-size: 1.2em;
+    align-self: flex-start;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.info-song {
+    margin-top: 30px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.row-img {
+    width: 100%;
+    height: 50%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-musik .img {
+    width: 200px;
+    height: 200px;
+    background-color: #ff6009;
+    top: 100px;
+}
+
+.proggres-bar {
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    margin-top: 30px;
+}
+
+.controls-song {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.btn {
+    border: none;
+    background: none;
+    font-size: 1.5em;
+    color: #fff;
+    outline: none;
+    cursor: pointer;
+}
+
+.btn.play {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 2em;
+    background-color: #ff6009;
+}
+
+
+/* Musik Player Bar */
+
+.player-musik-bar {
+    width: 100vw;
+    height: 80px;
+    background-color: rgba(255, 96, 9, .86);
+    position: absolute;
+    top: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    transition: .4s;
+}
+
+.info-song-bar {
+    display: block;
+}
+
+.player-musik-bar .controls-song {
+    margin-top: 0;
+}
+
+.player-musik-bar .btn {
+    font-size: 1.2em;
+}
+
+.player-musik-bar .btn.play {
+    background-color: #fff;
+    color: #ff6009;
+    width: 50px;
+    height: 50px;
+    margin: 0 20px;
+} 
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+    .menu h4 {
+        text-align: left;
+        padding-left: 20px;
+    }
+    .row-card {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .card {
+        width: 48%;
+    }
+    .row-img {
+        height: 65%;
+    }
+    .player-musik .img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+/* Dekstop */
+
+@media screen and (min-width: 1024px) {
+    .header {
+        padding: 10px 20px;
+    }
+    .header .title-app {
+        text-align: left;
+        font-size: 1.4em;
+    }
+    .main-app {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu h4 {
+        font-weight: bold;
+        border: none;
+    }
+    .list-song {
+        width: 60vw;
+    }
+    .player-musik {
+        width: 40vw;
+        position: static;
+    }
+    .close {
+        display: none;
+    }
+    .info-song {
+        margin-top: 0;
+    }
+    .row-img {
+        height: 60%;
+    }
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+    ::-webkit-scrollbar-thumb {
+        background: #ff6009;
+    }
+}

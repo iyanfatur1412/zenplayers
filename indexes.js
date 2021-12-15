@@ -138,5 +138,5 @@ btnPrev[1].onclick = prevPlay;
 
 closes.onclick = function() {
     playerMusik.style.right = "100%";
-    playerMusikBar.style.transform ="translateY(0)";
+    playerMusikBar.style.transform ="translateX(0)";
 }

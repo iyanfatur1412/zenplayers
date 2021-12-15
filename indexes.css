@@ -191,13 +191,12 @@ body, h1, h2, h3, h4 {
 /* Musik Player Bar */
 
 .player-musik-bar {
-    display: none;
     width: 100vw;
     height: 80px;
     background-color: rgba(255, 96, 9, .86);
     position: absolute;
     bottom: 0;
-    transform: translateY(120%);
+    transform: translateX(-100%);
     display: flex;
     justify-content: space-between;
     align-items: center;

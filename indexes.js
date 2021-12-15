@@ -48,6 +48,7 @@ for(let i=0; i<lagu.length; i++) {
 
 
 function autoPlay(arg) {
+    proggress.style.width = "0";
     clearInterval(interval);
     clearTimeout(timeOut);
     playerMusik.style.right = "0";
@@ -145,7 +146,6 @@ closes.onclick = function() {
     playerMusik.style.right = "100%";
     playerMusikBar.style.transform ="translateX(0)";
 }
-
 btnSongBar.onclick = function() {
     playerMusik.style.right = "0";
 }

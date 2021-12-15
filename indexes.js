@@ -47,7 +47,7 @@ for(let i=0; i<lagu.length; i++) {
 
 
 function autoPlay(arg) {
-     proggress.style.width = "0";
+    proggress.style.width = "0";
     clearInterval(interval);
     clearTimeout(timeOut);
     playerMusik.style.right = "0";

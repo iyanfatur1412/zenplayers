@@ -20,7 +20,7 @@ body, h1, h2, h3, h4 {
 .header {
     width: 100vw;
     background-color: #ff6009;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -29,7 +29,7 @@ body, h1, h2, h3, h4 {
     text-transform: uppercase;
     color: #fff;
     text-align: center;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 .header .title-app span {
@@ -37,7 +37,7 @@ body, h1, h2, h3, h4 {
     color: #000;
     font-weight: bold;
     text-transform: capitalize;
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 
 
@@ -58,7 +58,7 @@ body, h1, h2, h3, h4 {
 .row-card {
     display: flex;
     flex-direction: column;
-    padding: 30px 20px 0;
+    padding: 30px 20px 40px;
     overflow-y: scroll;
 }
 
@@ -86,6 +86,7 @@ body, h1, h2, h3, h4 {
 
 .title-song {
     font-size: 1.2em;
+    text-transform: capitalize;
 }
 
 .artis-song {
@@ -104,7 +105,8 @@ body, h1, h2, h3, h4 {
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-    top: 100%;
+    top: 0;
+    right: 100%;
     background-color: #111111;
     padding: 20px;
     display: flex;
@@ -115,7 +117,6 @@ body, h1, h2, h3, h4 {
 .close {
     display: inline-block;
     color: #ff6009;
-    transform: rotate(90deg);
     font-size: 1.2em;
     align-self: flex-start;
     padding: 5px;
@@ -144,11 +145,22 @@ body, h1, h2, h3, h4 {
     top: 100px;
 }
 
+.row-img .img img {
+    width: 100%;
+}
+
 .proggres-bar {
     width: 100%;
     height: 3px;
     background-color: #fff;
     margin-top: 30px;
+    overflow: hidden;
+}
+
+.proggress {
+    width: 0;
+    height: 5px;
+    background-color: #ff6009;
 }
 
 .controls-song {
@@ -183,7 +195,8 @@ body, h1, h2, h3, h4 {
     height: 80px;
     background-color: rgba(255, 96, 9, .86);
     position: absolute;
-    top: 100%;
+    bottom: 0;
+    transform: translateY(120%);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -193,6 +206,25 @@ body, h1, h2, h3, h4 {
 
 .info-song-bar {
     display: block;
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.info-song-bar::after {
+    content: '';
+    display: block;
+    width: 80px;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: linear-gradient(to left, rgba(255, 96, 9, .86), rgba(255, 96, 9, 0));
+}
+
+.info-song-bar h4 {
+    display: block;
+    width: 800px;
 }
 
 .player-musik-bar .controls-song {
@@ -260,6 +292,7 @@ body, h1, h2, h3, h4 {
     .player-musik {
         width: 40vw;
         position: static;
+        border-left: 2px solid #ff6009;
     }
     .close {
         display: none;

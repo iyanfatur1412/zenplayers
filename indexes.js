@@ -15,7 +15,7 @@ const playerMusik = document.querySelector(".player-musik"),
       btnPlay = document.querySelectorAll(".play"),
       btnPrev = document.querySelectorAll(".prev"),
       btnNext = document.querySelectorAll(".next"),
-      proggress =document.querySelector(".proggress"),
+      proggress = document.querySelector(".proggress"),
       colImgAlbum = document.querySelector(".row-img .img img");
 
 
@@ -48,7 +48,7 @@ for(let i=0; i<lagu.length; i++) {
 
 
 function autoPlay(arg) {
-    proggress.style.width = "0";
+    proggress.value = 0;
     clearInterval(interval);
     clearTimeout(timeOut);
     playerMusik.style.right = "0";
@@ -73,11 +73,9 @@ function resetInfoSong(title, infoSong, srcAlbum) {
 
 function proggressBar() {
         durasi = musik.duration;
-        durasiNode = 1 / (durasi/100);
+        proggress.setAttribute("max", durasi);
         interval = setInterval(function() {
-            amount = 1 / (durasi/100);
-            proggress.style.width = Number(durasiNode.toFixed(2)) +"%";
-            durasiNode += amount;
+            proggress.value = musik.currentTime;
         }, 1000);
 }
 
@@ -86,7 +84,7 @@ function setTimer(arg) {
     fullDurasi = arg*1000;
     timeOut = setTimeout(function() {
         clearInterval(interval);
-        proggress.style.width = "0";
+        proggress.value = musik.currentTime;
         nextPlay();
     }, fullDurasi);
 }
@@ -117,8 +115,7 @@ function playPause() {
         btnPlay[0].innerHTML = "||";
         btnPlay[1].innerHTML = "||";
         interval = setInterval(function() {
-            proggress.style.width = Number(durasiNode.toFixed(2)) +"%";
-            durasiNode += amount;
+            proggress.value = musik.currentTime;
         }, 1000);
             setTimer((fullDurasi/1000) - musik.currentTime);
     }else {
@@ -126,7 +123,7 @@ function playPause() {
         btnPlay[0].innerHTML = "&gt";
         btnPlay[1].innerHTML = "&gt";
         clearInterval(interval);
-        clearTimeout(timeOut)
+        clearTimeout(timeOut);
     }
 }
 
@@ -148,4 +145,10 @@ closes.onclick = function() {
 }
 btnSongBar.onclick = function() {
     playerMusik.style.right = "0";
+}
+
+proggress.onchange = function() {
+    musik.currentTime = proggress.value;
+    clearTimeout(timeOut);
+    setTimer(musik.duration - musik.currentTime);
 }

@@ -153,17 +153,17 @@ body, h1, h2, h3, h4 {
     width: 100%;
 }
 
-.proggres-bar {
+/* .proggres-bar {
     width: 100%;
     height: 3px;
     background-color: #fff;
     margin-top: 30px;
     overflow: hidden;
-}
+} */
 
 .proggress {
-    width: 0;
-    height: 5px;
+    width: 100%;
+    height: 2px;
     background-color: #ff6009;
 }
 

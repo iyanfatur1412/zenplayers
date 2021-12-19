@@ -1,153 +1,101 @@
-const container = document.querySelector(".container"),
-      header = document.querySelector(".header"),
-      menu = document.querySelector(".menu");
-
-const rowCard = document.querySelector(".row-card"),
-      lagu = document.querySelectorAll(".card-info .artis-song"),
-      imgAlbum = document.querySelectorAll(".card .img img");
-
-
-
-const playerMusik = document.querySelector(".player-musik"),
-      closes = document.querySelector(".close"),
-      titleSong = document.querySelector(".player-musik .title-song"),
-      artisSong = document.querySelector(".player-musik .artis-song"),
-      btnPlay = document.querySelectorAll(".play"),
-      btnPrev = document.querySelectorAll(".prev"),
-      btnNext = document.querySelectorAll(".next"),
-      proggress = document.querySelector(".proggress"),
-      colImgAlbum = document.querySelector(".row-img .img img");
-
-
-const playerMusikBar = document.querySelector(".player-musik-bar"),
-      btnSongBar = document.querySelector(".info-song-bar"),
-      infoSongBar = document.querySelector(".info-song-bar h4");
-
-
 const musik = document.querySelector("audio");
-      
-let currentMusik = 0;
-
-let infoSong = [],
-    srcAlbum = [],
-    durasi = 0,
+let getElement = className => document.querySelector("."+className);
+let getElements = className => document.querySelectorAll("."+className);
+let currentMusik = 0,
+    infoSong,
     interval,
-    timeOut,
-    fullDurasi;
+    timeOut;
     
-rowCard.style.height = container.offsetHeight - header.offsetHeight - menu.offsetHeight+"px";
+getElement("row-card").style.height = getElement("container").offsetHeight - getElement("header").offsetHeight - getElement("menu").offsetHeight+"px";
 
-for(let i=0; i<lagu.length; i++) {
-    infoSong.push(lagu[i].innerHTML.split(" - "));
-    srcAlbum.push(imgAlbum[i].src);
-}
-
-
+infoSong = [].slice.call(getElements("card-info .artis-song")).map(arr => arr.innerHTML.split(" - "));
 
 // Functions
 
-
 function autoPlay(arg) {
-    proggress.value = 0;
     clearInterval(interval);
     clearTimeout(timeOut);
-    playerMusik.style.right = "0";
-    btnPlay[0].innerHTML = "||";
-    btnPlay[1].innerHTML = "||";
-    resetInfoSong(infoSong[arg-1][1], infoSong[arg-1].join(" - "), srcAlbum[arg-1]);
+    resetElement();
+    resetInfoSong(infoSong[arg-1][1], infoSong[arg-1].join(" - "), infoSong[arg-1][1].toLowerCase());
     musik.src = "bahan/musik/"+ infoSong[arg-1][1].toLowerCase() +".mp3";
+    musik.onloadeddata = () => { setTimer(musik.duration); proggressBar() }
     musik.play();
-    musik.onloadedmetadata = function() {
-        proggressBar();
-        setTimer(musik.duration);
-    }
     currentMusik = arg;
 }
 
+function resetElement() {
+    getElement("proggress").value = 0;
+    getElement("player-musik").style.right = "0";
+    [].slice.call(getElements("play")).forEach(arr => arr.innerHTML = "||");
+}
+
 function resetInfoSong(title, infoSong, srcAlbum) {
-    titleSong.innerHTML = title;
-    artisSong.innerHTML = infoSong;
-    colImgAlbum.src = srcAlbum;
-    infoSongBar.innerHTML = infoSong;
+    getElement("player-musik .title-song").innerHTML = title;
+    getElement("player-musik .artis-song").innerHTML = infoSong;
+    getElement("row-img .img img").src = "bahan/"+ srcAlbum +".jpg";
+    getElement("info-song-bar h4").innerHTML = infoSong;
 }
 
 function proggressBar() {
-        durasi = musik.duration;
-        proggress.setAttribute("max", durasi);
-        interval = setInterval(function() {
-            proggress.value = musik.currentTime;
-        }, 1000);
+    getElement("proggress").setAttribute("max", musik.duration);
+    interval = setInterval(() => {
+        getElement("proggress").value = musik.currentTime;
+    }, 1000);
 }
 
-
 function setTimer(arg) {
-    fullDurasi = arg*1000;
-    timeOut = setTimeout(function() {
+    timeOut = setTimeout(() => {
         clearInterval(interval);
-        proggress.value = musik.currentTime;
+        getElement("proggress").value = musik.currentTime;
         nextPlay();
-    }, fullDurasi);
+    }, arg*1000);
 }
 
 function nextPlay() {
     currentMusik++;
-    if(currentMusik > lagu.length) {
-        currentMusik = 1;
-    }
-    btnPlay[0].innerHTML = "||";
-    btnPlay[1].innerHTML = "||";
+    currentMusik > infoSong.length ? currentMusik = 1 : "";
+    [].slice.call(getElements("play")).forEach(arr => arr.innerHTML = "||");
     autoPlay(currentMusik);
 }
 
 function prevPlay() {
     currentMusik--;
-    if(currentMusik < 1) {
-        currentMusik = lagu.length;
-    }
-    btnPlay[0].innerHTML = "||";
-    btnPlay[1].innerHTML = "||";
+    currentMusik < 1 ? currentMusik = infoSong.length : "";
+    [].slice.call(getElements("play")).forEach(arr => arr.innerHTML = "||");
     autoPlay(currentMusik);
 }
 
 function playPause() {
     if(musik.paused) {
         musik.play();
-        btnPlay[0].innerHTML = "||";
-        btnPlay[1].innerHTML = "||";
+        [].slice.call(getElements("play")).forEach(arr => arr.innerHTML = "||");
         interval = setInterval(function() {
             proggress.value = musik.currentTime;
-        }, 1000);
-            setTimer((fullDurasi/1000) - musik.currentTime);
+        }, 1000)
+            setTimer(musik.duration - musik.currentTime);
     }else {
         musik.pause();
-        btnPlay[0].innerHTML = "&gt";
-        btnPlay[1].innerHTML = "&gt";
+        [].slice.call(getElements("play")).forEach(arr => arr.innerHTML = ">");
         clearInterval(interval);
         clearTimeout(timeOut);
     }
 }
 
-
 // Event Click
 
-btnPlay[0].onclick = playPause;
-btnPlay[1].onclick = playPause;
+[].slice.call(getElements("play")).forEach(arr => { arr.onclick = playPause });
+[].slice.call(getElements("next")).forEach(arr => { arr.onclick = nextPlay });
+[].slice.call(getElements("prev")).forEach(arr => { arr.onclick = prevPlay });
 
-btnNext[0].onclick = nextPlay;
-btnNext[1].onclick = nextPlay;
 
-btnPrev[0].onclick = prevPlay;
-btnPrev[1].onclick = prevPlay;
-
-closes.onclick = function() {
-    playerMusik.style.right = "100%";
-    playerMusikBar.style.transform ="translateX(0)";
-}
-btnSongBar.onclick = function() {
-    playerMusik.style.right = "0";
+getElement("close").onclick = () => {
+    getElement("player-musik").style.right = "100%";
+    getElement("player-musik-bar").style.transform ="translateX(0)";
 }
 
-proggress.onchange = function() {
+getElement("info-song-bar").onclick = () => { getElement("player-musik").style.right = "0"; }
+
+getElement("proggress").onchange = function() {
     musik.currentTime = proggress.value;
     clearTimeout(timeOut);
     setTimer(musik.duration - musik.currentTime);

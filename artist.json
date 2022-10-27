@@ -1,0 +1,67 @@
+[
+    {
+        "artist": "Uta (Ado)",
+        "album": [
+            {
+                "title": "One Piece Film Red",
+                "img": "one-piece-red.jpg"
+            }
+        ],
+        "img": "one-piece-red.jpg"
+    },
+    {
+        "artist": "Kato Megumi (CV. Kiyono Yasuno)",
+        "album": [
+            {
+                "title": "Ultimate",
+                "img": "ultimate.jpg"
+            },
+            {
+                "title": "M Flat",
+                "img": "m-flat.jpg"
+            }
+        ],
+        "img": "m-flat.jpg"
+    },
+    {
+        "artist": "Aimer, Lilas Ikuta, Milet",
+        "album": [
+            {
+                "title": "Omokage",
+                "img": "omokage.jpg"
+            }
+        ],
+        "img": "omokage.jpg"
+    },
+    {
+        "artist": "MindaRyn",
+        "album": [
+            {
+                "title": "Shine",
+                "img": "shine.jpg"
+            }
+        ],
+        "img": "shine.jpg"
+    },
+    {
+        "artist": "Mikito P feat. Hatsune Miku",
+        "album": [
+            {
+                "title": "Magical Mirai",
+                "img": "magical-mirai.jpg"
+            }
+        ],
+        "img": "magical-mirai.jpg"
+    },
+    {
+        "artist": "Haruka Tomatsu, Hikasa Yoko, Amamiya Sora",
+        "album": [
+            {
+                "title": "WWWW.Working",
+                "img": "www.working.jpg"
+            }
+        ],
+        "img": "www.working.jpg"
+    }
+
+]

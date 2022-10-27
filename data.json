@@ -1,0 +1,94 @@
+[
+    {
+        "song": "39 Music!",
+        "album": "Magical Mirai",
+        "artist": "Hatsune Miku feat. Mikito P",
+        "img": "magical-mirai.jpg",
+        "file": "39 Music!.m4a"
+    },
+    {
+        "song": "Shine",
+        "album": "Shine",
+        "artist": "MindaRyn",
+        "img": "shine.jpg",
+        "file": "Shine.mp3"
+    },
+    {
+        "song": "Ultimate",
+        "album": "Ultimate",
+        "artist": "Kato Megumi (CV. Kiyono Yasuno)",
+        "img": "ultimate.jpg",
+        "file": "Ultimate.mp3"
+    },
+    {
+        "song": "Shin Jidai",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Shin Jidai.mp3"
+    },
+    {
+        "song": "Omokage",
+        "album": "Omokage",
+        "artist": "Aimer, Lilas Ikuta, Milet",
+        "img": "shine.jpg",
+        "file": "Omokage.mp3"
+    },
+    {
+        "song": "Kaze no Yukue",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Kaze no Yukue.mp3"
+    },
+    {
+        "song": "Utakata Lullaby",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Utakata Lullaby.mp3"
+    },
+    {
+        "song": "Backlight",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Backlight.mp3"
+    },
+    {
+        "song": "Sekai no Tsuzuki",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Sekai no Tsuzuki.mp3"
+    },
+    {
+        "song": "Watashi ga Saikyou",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Watashi ga Saikyou.mp3"
+    },
+    {
+        "song": "Tot Musica",
+        "album": "One Piece Film Red",
+        "artist": "Uta (Ado)",
+        "img": "one-piece-red.jpg",
+        "file": "Tot Musica.mp3"
+    },
+    {
+        "song": "Eyecatch! Too much!",
+        "album": "WWWW.Working",
+        "artist": "Haruka Tomatsu, Hikasa Yoko, Amamiya Sora",
+        "img": "www.working.jpg",
+        "file": "Eyecatch! Too much!.mp3"
+    },
+    {
+        "song": "M Flat",
+        "album": "M Flat",
+        "artist": "Kato Megumi (CV. Kiyono Yasuno)",
+        "img": "m-flat.jpg",
+        "file": "M Flat.mp3"
+    }
+
+]

@@ -1,0 +1,277 @@
+/* 58b2a0 */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Cambria', sans-serif;
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #58b2a0;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    padding: 10px 20px;
+    position: relative;
+}
+
+.navbar .brand h3 {
+    font-family: 'Exotc350 DmBd BT', sans-serif;
+    font-size: 1.4rem;
+    color: #fff;
+}
+
+.navbar h3 span {
+    text-transform: uppercase;
+}
+
+.search-bar {
+    width: 0;
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    transition: .3s ease-out;
+}
+
+.search-bar input {
+    outline: none;
+    height: 30px;
+    line-height: 100%;
+    border: none;
+    padding: 5px 10px;
+    flex: 2;
+}
+
+.enter {
+    border: none;
+    outline: none;
+    background-color: #3a8878;
+    color: #fff;
+    padding: 0 20px;
+    width: 80px;
+    height: 30px;
+}
+
+.navs {
+    width: 100vw;
+    display: flex;
+    padding: 10px 0 20px 0;
+    background-color: #58b2a0;
+    color: #fff;
+    position: relative;
+}
+
+.navs-container {
+    width: 90%;
+    margin: auto;
+    padding: 0 10px;
+}
+
+.navs::before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navs span {
+    padding: 5px;
+    cursor: pointer;
+}
+
+.navs span.active {
+    border-bottom: 2px solid #fff;
+}
+
+.container {
+    width: 100vw;
+    min-height: 100vh;
+    background-color: rgb(235, 235, 235);
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 20px 20px 80px;
+    margin-top: 20px;
+}
+
+.content-row {
+    display: grid;
+}
+
+.content-column {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+   justify-items: center;
+   row-gap: 10px;
+}
+
+.content .card {
+    width: 100%;
+    display: flex;
+    margin: 15px 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.content .card::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -15px;
+    width: 96%;
+    height: 1px;
+    background-color: rgba(68, 68, 68, 0.2);
+    left: 2%;
+    cursor: default;
+}
+
+.content .card .img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-right: 20px;
+}
+
+.content .card .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.content .card figcaption {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.content .card figcaption p {
+    color: #58b2a0;
+    opacity: .9;
+}
+
+.card-vertical {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    text-align: center;
+}
+
+.card-vertical .img {
+    width: 100%;
+    height: 100px;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-vertical .img img {
+    width: 100%;
+    height: 100%;
+}
+
+.card-vertical figcaption {
+    margin-top: 10px;
+}
+
+.card-vertical figcaption p {
+    color: #58b2a0;
+    opacity: .9;
+}
+
+.current-play {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding: 10px 20px;
+    background-color: #58b2a0;
+}
+
+.current-play .card {
+    display: flex;
+    overflow: hidden;
+    color: #fff;
+    align-items: center;
+}
+
+.current-play .card .img {
+    width: 50px;
+    height: 50px;
+    margin-right: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.current-play .card img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+}
+
+.current-play .card figcaption p {
+    opacity: .9;
+}
+
+.btn-play {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    object-position: center;
+    cursor: pointer;
+    justify-self: end;
+}
+
+.btn-play img {
+    width: 100%;
+    height: 100%;
+}
+
+.loading-col {
+    width: 100vw;
+}
+
+.loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #ffff;
+}
+
+@media screen and (min-width: 768px) {
+    .content-column {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+@media screen and (min-width: 1028px) {
+    .content-column {
+        grid-template-columns: repeat(8, 1fr);
+    }
+}

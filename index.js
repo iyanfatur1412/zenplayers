@@ -19,7 +19,7 @@ navs.map( btn => {
 })
 
 getAllData(showAllSong);
-
+getDataById(btnPlay, 0);
 
 function getAllData(callback) {
     fetch("data.json").then(response => response.json()).then(response => callback(response)).catch(response => callback(response));
@@ -89,22 +89,27 @@ function chooseSong() {
     song.map(btn => {
         btn.addEventListener("click", function() {
             audioCheck(this.dataset.file);
-            getDataBySpesific(setCurrentSong, "file", this.dataset.file)
+            // getDataBySpesific(setCurrentSong, "file", this.dataset.file);
         })
     })
 }
 
 function audioCheck(src) {
+    const btn = document.querySelector(".btn-play img");
     if(audio.paused == true) {
         audio.src = "file/" + src;
         audio.play();
+        btn.src = "img/btn-play.png";
         loadData();
     }else {
+        btn.src = "img/btn-pause.png";
         audio.pause();
         audio.src = "file/" + src;
         audio.play();
+        btn.src = "img/btn-play.png";
         loadData();
     }
+    getDataBySpesific(setCurrentSong, "file", src);
 }
 
 function loadData() {
@@ -123,6 +128,26 @@ function setCurrentSong(data) {
     data.forEach(item => card += elCurrentSong(item));
     currentInfo.innerHTML = card;
 }
+
+function btnPlay(data) {
+    const btn = document.querySelector(".btn-play img");
+    const arr = [];
+    arr.push(data);
+    btn.addEventListener("click", function() {
+        if(audio.paused == true) {
+            if(audio.src == "") {
+                audioCheck(data.file);
+            }else {
+                audio.play()
+            }
+            this.src = "img/btn-play.png";
+        }else {
+            audio.pause();
+            this.src = "img/btn-pause.png";
+        }
+    })
+}
+
 
 function elCurrentSong(data) {
     return `

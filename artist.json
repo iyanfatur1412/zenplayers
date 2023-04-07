@@ -62,6 +62,25 @@
             }
         ],
         "img": "www.working.jpg"
+    },
+    {
+        "artist": "Yuaru",
+        "album": [
+            {
+                "title": "Yuaru",
+                "img": "night-sky-patrol-of-tomorrow.jpg"
+            }
+        ],
+        "img": "night-sky-patrol-of-tomorrow.jpg"
+    },
+    {
+        "artist": "Yuzuki",
+        "album": [
+            {
+                "title": "Higurashi no Naku Koro ni Hou",
+                "img": "dear-you.jpg"
+            }
+        ],
+        "img": "dear-you.jpg"
     }
-
 ]

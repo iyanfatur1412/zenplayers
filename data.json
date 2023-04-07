@@ -89,6 +89,21 @@
         "artist": "Kato Megumi (CV. Kiyono Yasuno)",
         "img": "m-flat.jpg",
         "file": "M Flat.mp3"
+    },
+    {
+        "song": "Night Sky Patrol of Tomorrow (Cover by Yuaru)",
+        "album": "Yuaru",
+        "artist": "Yuaru",
+        "img": "night-sky-patrol-of-tomorrow.jpg",
+        "file": "Night-sky-patrol.mp3"
+    },
+    {
+        "song": "You 2014 Mix Thanks/You Ver",
+        "album": "Higurashi no Naku Koro ni Hou",
+        "artist": "Yuzuki",
+        "img": "dear-you.jpg",
+        "file": "dear-you.mp3"
+        
     }
 
 ]

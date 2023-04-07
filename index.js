@@ -206,7 +206,7 @@ function elSong(data, id) {
 function eLoad() {
     return `
     <div class="loading">
-        <p>Processing Song...</p>
+        <img src="./img/loading.gif" alt="loading" class="loading-img">
     </div>
     `
 }

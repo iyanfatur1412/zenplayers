@@ -4,13 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="./img/ico/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="./img/ico/favicon.ico">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/ico/favicon-16x16.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/ico/android-chrome-192x192.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="./img/ico/android-chrome-512x512.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <title>Zenplayer</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/ico/favicon-16x16.png">
+    <title>MusicQu</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
@@ -20,6 +15,11 @@
         <div class="brand">
             <h3><span>Music</span>QU</h3>
             <img src="./img/ico/favicon-16x16.png" alt="logo" class="logo">
+        </div>
+        <div class="dark-mode mode" >
+            <button id="dark-mode-btn" >
+                <img src="./img/night.png" class="yinAndYang" alt="" width="50" height="50" >
+            </button>
         </div>
     </nav>
 
@@ -40,17 +40,21 @@
     <div class="current-play">
         <div class="current-info">
             <figure class="card">
-                <div class="img">
-                    <img src="img/ico/android-chrome-512x512.png" alt="">
+                
+                <!-- ketika lagu belum dipilih dan diklik, ada bug loading yang tiba-tiba berjalan. 
+                Saya tidak tahu bagaimana cara memperbaikinya jadi saya menambahkan komentar -->
+
+                <!-- <div class="img">
+                    <img src="img/ico/favicon-16x16.png" alt="">
                 </div>
                 <figcaption>
                     <h4>Music</h4>
                     <p>Artist</p>
-                </figcaption>
+                </figcaption> -->
             </figure>
         </div>
         <div class="btn-play">
-            <img src="img/btn-pause.png" alt="">
+            <img src="./img/ico/favicon-16x16.png" alt="">
         </div>
     </div>
 

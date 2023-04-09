@@ -2,6 +2,42 @@ const content = document.querySelector(".content");
 const navsBtn = document.querySelectorAll(".navs span");
 const navs = [...navsBtn];
 let audio = new Audio();
+const btn = document.getElementById("dark-mode-btn");
+const body = document.querySelector("body");
+const navbar = document.querySelector(".navbar");
+const navsu = document.querySelector(".navs");
+const container = document.querySelector(".container");
+const contento = document.querySelector(".content");
+const bawah = document.querySelector(".current-play")
+const logo = document.querySelector(".logo");
+const logoSrc = logo.getAttribute("src");
+const darkModeLogoSrc = "./img/ico/whaito-icon.png";
+const lightSrc = "./img/light.png"
+const yingAndYang = document.querySelector('.yinAndYang');
+const yinAndYangSrc = yingAndYang.getAttribute("src");
+
+btn.addEventListener("click", function () {
+    body.classList.toggle("mode");
+    if (body.classList.contains("mode")) {
+        logo.src = darkModeLogoSrc;
+        yingAndYang.src = lightSrc;
+    } else {
+        logo.src = logoSrc;
+        yingAndYang.src = yinAndYangSrc;
+    }
+});
+
+function toggleDarkMode() {
+    body.classList.toggle("dark-modes");
+    navbar.classList.toggle("dark-modes-nav");
+    navsu.classList.toggle("dark-modes-navs");
+    container.classList.toggle("dark-modes-contain");
+    contento.classList.toggle("dark-modes-content");
+    bawah.classList.toggle("dark-modes-bawah");
+}
+
+const darkModeBtn = document.getElementById("dark-mode-btn");
+darkModeBtn.addEventListener("click", toggleDarkMode);
 
 navs.map( btn => {
     btn.addEventListener("click", function() {
@@ -89,7 +125,6 @@ function chooseSong() {
     song.map(btn => {
         btn.addEventListener("click", function() {
             audioCheck(this.dataset.file);
-            // getDataBySpesific(setCurrentSong, "file", this.dataset.file);
         })
     })
 }
@@ -147,6 +182,7 @@ function btnPlay(data) {
         }
     })
 }
+
 
 
 function elCurrentSong(data) {
@@ -210,3 +246,4 @@ function eLoad() {
     </div>
     `
 }
+

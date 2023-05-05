@@ -28,9 +28,7 @@ body {
     display: flex;
     align-items: center;
 }
-.navbar h3 span {
-    text-transform: uppercase;
-}
+
 
 .brand h3 {
     margin: 0;

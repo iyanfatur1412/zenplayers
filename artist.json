@@ -1,86 +1,127 @@
 [
-    {
-        "artist": "Uta (Ado)",
-        "album": [
-            {
-                "title": "One Piece Film Red",
-                "img": "one-piece-red.jpg"
-            }
-        ],
+  {
+    "artist": "Uta (Ado)",
+    "album": [
+      {
+        "title": "One Piece Film Red",
         "img": "one-piece-red.jpg"
-    },
-    {
-        "artist": "Kato Megumi (CV. Kiyono Yasuno)",
-        "album": [
-            {
-                "title": "Ultimate",
-                "img": "ultimate.jpg"
-            },
-            {
-                "title": "M Flat",
-                "img": "m-flat.jpg"
-            }
-        ],
+      }
+    ],
+    "img": "one-piece-red.jpg"
+  },
+  {
+    "artist": "Kato Megumi (CV. Kiyono Yasuno)",
+    "album": [
+      {
+        "title": "Ultimate",
+        "img": "ultimate.jpg"
+      },
+      {
+        "title": "M Flat",
         "img": "m-flat.jpg"
-    },
-    {
-        "artist": "Aimer, Lilas Ikuta, Milet",
-        "album": [
-            {
-                "title": "Omokage",
-                "img": "omokage.jpg"
-            }
-        ],
+      }
+    ],
+    "img": "m-flat.jpg"
+  },
+  {
+    "artist": "Aimer, Lilas Ikuta, Milet",
+    "album": [
+      {
+        "title": "Omokage",
         "img": "omokage.jpg"
-    },
-    {
-        "artist": "MindaRyn",
-        "album": [
-            {
-                "title": "Shine",
-                "img": "shine.jpg"
-            }
-        ],
+      }
+    ],
+    "img": "omokage.jpg"
+  },
+  {
+    "artist": "MindaRyn",
+    "album": [
+      {
+        "title": "Shine",
         "img": "shine.jpg"
-    },
-    {
-        "artist": "Mikito P feat. Hatsune Miku",
-        "album": [
-            {
-                "title": "Magical Mirai",
-                "img": "magical-mirai.jpg"
-            }
-        ],
+      }
+    ],
+    "img": "shine.jpg"
+  },
+  {
+    "artist": "Mikito P feat. Hatsune Miku",
+    "album": [
+      {
+        "title": "Magical Mirai",
         "img": "magical-mirai.jpg"
-    },
-    {
-        "artist": "Haruka Tomatsu, Hikasa Yoko, Amamiya Sora",
-        "album": [
-            {
-                "title": "WWWW.Working",
-                "img": "www.working.jpg"
-            }
-        ],
+      }
+    ],
+    "img": "magical-mirai.jpg"
+  },
+  {
+    "artist": "Haruka Tomatsu, Hikasa Yoko, Amamiya Sora",
+    "album": [
+      {
+        "title": "WWWW.Working",
         "img": "www.working.jpg"
-    },
-    {
-        "artist": "Yuaru",
-        "album": [
-            {
-                "title": "Yuaru",
-                "img": "night-sky-patrol-of-tomorrow.jpg"
-            }
-        ],
+      }
+    ],
+    "img": "www.working.jpg"
+  },
+  {
+    "artist": "Yuaru",
+    "album": [
+      {
+        "title": "Yuaru",
         "img": "night-sky-patrol-of-tomorrow.jpg"
-    },
-    {
-        "artist": "Yuzuki",
-        "album": [
-            {
-                "title": "Higurashi no Naku Koro ni Hou",
-                "img": "dear-you.jpg"
-            }
-        ],
-        "img": "dear-you.jpg"
-    }
+      }
+    ],
+    "img": "night-sky-patrol-of-tomorrow.jpg"
+  },
+  {
+    "artist": "Yuzuki",
+    "album": [
+      {
+        "title": "Higurashi no Naku Koro ni Hou",
+        "img": "analogy.jpg"
+      }
+    ],
+    "img": "dear-you.jpg"
+  },
+
+  {
+    "artist": "Bentham",
+    "album": [
+      {
+        "title": "Keppeki Danshi! Aoyama-kun",
+        "img": "white.jpg"
+      }
+    ],
+    "img": "white.jpg"
+  },
+  {
+    "artist": "Damval",
+    "album": [
+      {
+        "title": "Damval",
+        "img": "damval.jpg"
+      }
+    ],
+    "img": "damval.jpg"
+  },
+  {
+    "artist": "BUMP OF CHICKEN",
+    "album": [
+      {
+        "title": "Butterflies",
+        "img": "Butterflies.jpg"
+      }
+    ],
+    "img": "helloworld.jpg"
+  },
+  {
+    "artist": "kessoku band",
+    "album": [
+      {
+        "title": "kessoku band",
+        "img": "kessoku.jpg"
+      }
+    ],
+    "img": "Bocchi.jpg"
+  }
 ]

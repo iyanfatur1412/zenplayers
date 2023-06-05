@@ -1,109 +1,184 @@
 [
-    {
-        "song": "39 Music!",
-        "album": "Magical Mirai",
-        "artist": "Hatsune Miku feat. Mikito P",
-        "img": "magical-mirai.jpg",
-        "file": "39 Music!.m4a"
-    },
-    {
-        "song": "Shine",
-        "album": "Shine",
-        "artist": "MindaRyn",
-        "img": "shine.jpg",
-        "file": "Shine.mp3"
-    },
-    {
-        "song": "Ultimate",
-        "album": "Ultimate",
-        "artist": "Kato Megumi (CV. Kiyono Yasuno)",
-        "img": "ultimate.jpg",
-        "file": "Ultimate.mp3"
-    },
-    {
-        "song": "Shin Jidai",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Shin Jidai.mp3"
-    },
-    {
-        "song": "Omokage",
-        "album": "Omokage",
-        "artist": "Aimer, Lilas Ikuta, Milet",
-        "img": "shine.jpg",
-        "file": "Omokage.mp3"
-    },
-    {
-        "song": "Kaze no Yukue",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Kaze no Yukue.mp3"
-    },
-    {
-        "song": "Utakata Lullaby",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Utakata Lullaby.mp3"
-    },
-    {
-        "song": "Backlight",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Backlight.mp3"
-    },
-    {
-        "song": "Sekai no Tsuzuki",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Sekai no Tsuzuki.mp3"
-    },
-    {
-        "song": "Watashi ga Saikyou",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Watashi ga Saikyou.mp3"
-    },
-    {
-        "song": "Tot Musica",
-        "album": "One Piece Film Red",
-        "artist": "Uta (Ado)",
-        "img": "one-piece-red.jpg",
-        "file": "Tot Musica.mp3"
-    },
-    {
-        "song": "Eyecatch! Too much!",
-        "album": "WWWW.Working",
-        "artist": "Haruka Tomatsu, Hikasa Yoko, Amamiya Sora",
-        "img": "www.working.jpg",
-        "file": "Eyecatch Too much.mp3"
-    },
-    {
-        "song": "M Flat",
-        "album": "M Flat",
-        "artist": "Kato Megumi (CV. Kiyono Yasuno)",
-        "img": "m-flat.jpg",
-        "file": "M Flat.mp3"
-    },
-    {
-        "song": "Night Sky Patrol of Tomorrow",
-        "album": "Orangestar",
-        "artist": "Orangestar (CV. Yuaru)",
-        "img": "night-sky-patrol-of-tomorrow.jpg",
-        "file": "Night-sky-patrol.mp3"
-    },
-    {
-        "song": "You 2014 Mix Thanks/You Ver",
-        "album": "Higurashi no Naku Koro ni Hou",
-        "artist": "Yuzuki",
-        "img": "dear-you.jpg",
-        "file": "dear-you.mp3"
-        
-    }
-
+  {
+    "song": "39 Music!",
+    "album": "Magical Mirai",
+    "artist": "Hatsune Miku feat. Mikito P",
+    "img": "magical-mirai.jpg",
+    "file": "39 Music!.m4a"
+  },
+  {
+    "song": "Shine",
+    "album": "Shine",
+    "artist": "MindaRyn",
+    "img": "shine.jpg",
+    "file": "Shine.mp3"
+  },
+  {
+    "song": "Ultimate",
+    "album": "Ultimate",
+    "artist": "Kato Megumi (CV. Kiyono Yasuno)",
+    "img": "ultimate.jpg",
+    "file": "Ultimate.mp3"
+  },
+  {
+    "song": "Shin Jidai",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Shin Jidai.mp3"
+  },
+  {
+    "song": "Omokage",
+    "album": "Omokage",
+    "artist": "Aimer, Lilas Ikuta, Milet",
+    "img": "shine.jpg",
+    "file": "Omokage.mp3"
+  },
+  {
+    "song": "Kaze no Yukue",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Kaze no Yukue.mp3"
+  },
+  {
+    "song": "Utakata Lullaby",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Utakata Lullaby.mp3"
+  },
+  {
+    "song": "Backlight",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Backlight.mp3"
+  },
+  {
+    "song": "Sekai no Tsuzuki",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Sekai no Tsuzuki.mp3"
+  },
+  {
+    "song": "Watashi ga Saikyou",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Watashi ga Saikyou.mp3"
+  },
+  {
+    "song": "Tot Musica",
+    "album": "One Piece Film Red",
+    "artist": "Uta (Ado)",
+    "img": "one-piece-red.jpg",
+    "file": "Tot Musica.mp3"
+  },
+  {
+    "song": "Eyecatch! Too much!",
+    "album": "WWWW.Working",
+    "artist": "Haruka Tomatsu, Hikasa Yoko, Amamiya Sora",
+    "img": "www.working.jpg",
+    "file": "Eyecatch Too much.mp3"
+  },
+  {
+    "song": "M Flat",
+    "album": "M Flat",
+    "artist": "Kato Megumi (CV. Kiyono Yasuno)",
+    "img": "m-flat.jpg",
+    "file": "M Flat.mp3"
+  },
+  {
+    "song": "Night Sky Patrol of Tomorrow",
+    "album": "Yuaru",
+    "artist": "Yuaru",
+    "img": "night-sky-patrol-of-tomorrow.jpg",
+    "file": "Night-sky-patrol.mp3"
+  },
+  {
+    "song": "You 2014 Mix Thanks/You Ver",
+    "album": "Higurashi no Naku Koro ni Hou",
+    "artist": "Yuzuki",
+    "img": "dear-you.jpg",
+    "file": "dear-you.mp3"
+  },
+  {
+    "song": "White",
+    "album": "Keppeki Danshi! Aoyama-kun",
+    "artist": "Bentham",
+    "img": "white.jpg",
+    "file": "Bentham-white.mp3"
+  },
+  {
+    "song": "Analogy",
+    "album": "Higurashi no Naku Koro ni Hou",
+    "artist": "Ayane",
+    "img": "analogy.jpg",
+    "file": "Analogy.mp3"
+  },
+  {
+    "song": "Bintang feat. Hatsune Miku & Lapis",
+    "album": "Damval",
+    "artist": "Damval",
+    "img": "bintang.jpg",
+    "file": "bintang.mp3"
+  },
+  {
+    "song": "Ketir - Anxious feat. Hatsune Miku",
+    "album": "Damval",
+    "artist": "Damval",
+    "img": "ketir.jpg",
+    "file": "ketir.mp3"
+  },
+  {
+    "song": " Angkasa feat. Hatsune Miku",
+    "album": "Damval",
+    "artist": "Damval",
+    "img": "angkasa.jpg",
+    "file": "angkasa.mp3"
+  },
+  {
+    "song": "Hello,World!",
+    "album": "Butterflies",
+    "artist": "BUMP OF CHICKEN",
+    "img": "helloworld.jpg",
+    "file": "hello_world.m4a"
+  },
+  {
+    "song": "Karakara",
+    "album": "kessoku band",
+    "artist": "kessoku band",
+    "img": "karakara.jpg",
+    "file": "karakara.m4a"
+  },
+  {
+    "song": "What is wrong with",
+    "album": "kessoku band",
+    "artist": "kessoku band",
+    "img": "naniga.jpg",
+    "file": "naniga.m4a"
+  },
+  {
+    "song": "Guitar, Loneliness and Blue Planet",
+    "album": "kessoku band",
+    "artist": "kessoku band",
+    "img": "bocchi.jpg",
+    "file": "bocchi.m4a"
+  },
+  {
+    "song": "If I could be a constellation",
+    "album": "kessoku band",
+    "artist": "kessoku band",
+    "img": "kita.png",
+    "file": "kita.m4a"
+  },
+  {
+    "song": "seisyun complex",
+    "album": "kessoku band",
+    "artist": "kessoku band",
+    "img": "kessoku.jpg",
+    "file": "kessoku.m4a"
+  }
 ]

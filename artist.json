@@ -99,10 +99,10 @@
     "album": [
       {
         "title": "Damval",
-        "img": "damval.jpg"
+        "img": "Damval.jpg"
       }
     ],
-    "img": "damval.jpg"
+    "img": "Damval.jpg"
   },
   {
     "artist": "BUMP OF CHICKEN",
@@ -122,6 +122,6 @@
         "img": "kessoku.jpg"
       }
     ],
-    "img": "Bocchi.jpg"
+    "img": "bocchi.jpg"
   }
 ]
